@@ -1,0 +1,28 @@
+﻿﻿@model AcunMefyaAkademiPortfolio.Models.TblTestimonial
+@{
+    ViewBag.Title = "CreateTestimonial";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>CreateTestimonial</h2>
+
+<form method="post">
+    <label>Başlık</label>
+    <input type="text" class="table table-bordered" name="Title" />
+    <label>Proje Açıklaması</label>
+    <textarea rows="4" class="table table-bordered" name="Description"></textarea>
+    <br />
+    <label>AdSoyad</label>
+    <input type="text" class="table table-bordered" name="NameSurname" />
+    <br />
+    <label> Proje Resim Yolu</label>
+    <input type="text" class="table table-bordered" name="ImageUrl" />
+    <br />
+    <label> Meslek</label>
+    <input type="text" class="table table-bordered" name="Job" />
+    <br />
+    <label> Durum</label>
+    <input type="text" class="table table-bordered" name="Status" />
+    <br />
+    <button class="btn btn-info">Projeyi Kaydet</button>
+</form>

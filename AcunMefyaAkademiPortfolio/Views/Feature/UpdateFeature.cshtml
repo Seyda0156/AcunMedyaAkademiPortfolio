@@ -1,0 +1,26 @@
+﻿@model AcunMefyaAkademiPortfolio.Models.TblFeature
+@{
+    ViewBag.Title = "UpdateFeature";
+}
+
+<h2>UpdateFeature</h2>
+
+<form method="post">
+    <label>FeatureId</label>
+    @Html.TextBoxFor(x => x.FeatureID, new { @class = "table table-bordered" })
+    <br />
+    <label>Ad Soyad</label>
+    <input type="text" class="table table-bordered" value="@Model.NameSurname" name="NameSurname" />
+    <br />
+    <label>Proje Açıklaması</label>
+    <textarea rows="4" class="table table-bordered" name="Description">@Model.Description</textarea>
+    <br />
+    <label>Proje adı</label>
+    <input type="text" class="table table-bordered" value="@Model.ProjectName" name="ProjectName" />
+    <br />
+    <label>Proje Görsel Linki</label>
+    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "table table-bordered" })
+    <br />
+
+    <button class="btn btn-success">Proje Güncelle</button>
+</form>
